@@ -1,7 +1,7 @@
 def prime_until(input_number)
   num = input_number
   prime_array = [2]
-  i = 2
+  i = 3
   until i > num
     prime_check = true
     prime_array.each do |prime|
@@ -13,8 +13,7 @@ def prime_until(input_number)
     if prime_check == true
       prime_array.push(i)
     end
-
-    i += 1
+    i += 2
   end
   prime_array
 end
